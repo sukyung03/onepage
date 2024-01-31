@@ -1,0 +1,360 @@
+@import url(common.css);
+
+
+
+
+html{scroll-behavior: smooth;}
+
+body{
+  color: #333;
+  
+}
+
+/* Header ____________________*/
+header{
+  /* border: 1px solid #000; */
+  width: 100%;
+  height: 90px;
+  background-color:rgba(228, 227, 227, 0.3);
+}
+
+nav{
+  width: 1200px;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.gnb{display: flex;}
+.gnb li{margin: 0 20px;}
+.gnb li a{
+  color: #666;
+  font-size: 18px;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+.gnb li a:hover{
+  color: crimson;
+  font-size: 20px;
+}
+
+/* Main */
+main{
+  /* border: 1px solid #000; */
+  width: 100%;
+  height: 1000px;
+  background: url(../image/main2.jpg)no-repeat center center rgb(228, 227, 227);
+  margin: auto;
+}
+
+
+/* section */
+section{
+  width: 100%;
+  text-align: center;
+  background-color: rgb(228, 227, 227);
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+section h2{
+  font-size: 80px;
+  color: #9c9c9c;
+  font-weight: bold;
+  opacity: 0.5;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  transition: 0.7s;
+  /* border: 1px solid #000; */
+}
+section h2:hover{
+  color: #000;
+  box-sizing: border-box;
+  font-size: 90px;
+}
+
+.container h3{
+  font-size: 30px;
+  color: rgb(253, 219, 28);
+}
+
+/*  event______________________--*/
+
+
+.event .container{
+  width: 1200px;
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: auto;
+  
+}
+.event .card{
+  position: relative;
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.event .card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.event .content{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  text-align: center;
+  width: inherit;
+  height: inherit;
+  padding-top: 200px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  color: #eee;
+  font-size: 20px;
+}
+.event .card:hover .content{top: 0;}
+
+.event .card:nth-child(1) .content{background: linear-gradient(to top,#555, transparent);}
+.event .card:nth-child(2) .content{background: linear-gradient(to top, #555, transparent);}
+.event .card:nth-child(3) .content{background: linear-gradient(to top, #555, transparent);}
+
+.event .content h2{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.event .content a{
+  display: inline-block;
+  background-color: royalblue;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 17px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.event .content a:hover{
+  padding: 12px 22px;
+  font-size: 23px;
+  background-color: rgb(32, 81, 226);
+}
+
+
+/* store ________________________________*/
+
+
+
+.storea, .storeb {
+  /* border: 1px solid #000; */
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+  /*  */
+}
+.storea div, .storeb div {
+  margin-right: 15px;
+  margin-bottom: 30px;
+  animation: storea 15s linear infinite;
+  
+}
+
+
+.storea img, .storeb img {
+  margin-right: 15px;
+  
+  height: auto;
+}
+
+.storea p, .storeb p {
+  margin: 0;
+  text-align: left;
+}
+
+.store strong{
+  font-size: 18px;
+}
+.store span{
+  font-style: normal;
+  color: rgb(205, 42, 75);
+}
+
+
+@keyframes storea {
+  0%{
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translatex(0);
+  }
+}
+
+/* interior_________________________ */
+.interiorin{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.interiorin div{
+  width: 240px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: 0.5s;
+  filter: grayscale(1);
+}
+
+.interiorin div p{
+  font-size: 20px;
+}
+
+
+
+.interiorin div:nth-child(1){
+  background: url(../image/interior1.png) no-repeat center center;
+}
+.interiorin div:nth-child(2){
+  background: url(../image/interior2.png) no-repeat center center;
+}
+.interiorin div:nth-child(3){
+  background: url(../image/interior3.png) no-repeat center center;
+}
+.interiorin div:nth-child(4){
+  background: url(../image/interior4.png) no-repeat center center;
+}
+.interiorin div:nth-child(5){
+  background: url(../image/interior5.png) no-repeat center center;
+}
+
+.interiorin div:hover{
+  flex-grow: 3;
+  width: 1000px;
+  filter:none;
+  color: #ffffff00;
+}
+
+
+/* home Idea */
+.homeidea {
+  width: 1200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+.homeideain {
+  display: flex;
+  animation: homeidea 20s linear infinite;
+  flex-wrap: nowrap;
+  width: 700px;
+}
+
+.homeidea-item {
+  flex: 0 0 auto;
+  width: 100%; 
+  box-sizing: border-box;
+  padding: 20px; 
+  margin-right: 20px; 
+  background-color: #c5c5c5;
+  font-size: 18px;
+  color: #555;
+  border-radius: 5px;
+  
+}
+.homeidea-item strong{
+  font-size: 30px;
+  font-weight:bold;
+  color: #333;
+  
+}
+.homeidea-item img{
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.homeideain div:last-child {
+  margin-right: 0;
+}
+
+@keyframes homeidea {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+}
+
+.customersupport{
+  padding: 100px;
+}
+
+
+/* customer support_________________ */
+.customerin{
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.customerin a{
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(253, 200, 28);
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customerin p{
+  transition: 0.5s;
+  color: #fff;
+}
+.customerin a:hover p{
+  counter-reset: #fff;
+  transform: rotatey(360deg);
+}
+
+
+/* footer ________________________________-*/
+footer p{
+  background-color: gray;
+  text-align: center;
+  padding: 15px;
+  color: #eee;
+  font-size: 14px;
+}
